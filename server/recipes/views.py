@@ -35,4 +35,9 @@ class RecipeView(APIView):
             return JsonResponse("Recipe Added Successfully", safe=False)
         return JsonResponse("Failed to Add Recipe", safe=False)
     
+    def delete(self, request, pk):
+      recipe_to_delete = Recipe.objects.get(recipeId=pk)
+      recipe_to_delete.delete()
+      return JsonResponse("Recipe Deleted Successfully", safe=False)
+    
   
