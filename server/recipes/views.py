@@ -9,6 +9,22 @@ from .serializers import RecipeSerializer
 
 
 class RecipeView(APIView):
+    #target single recipe
+    def get_recipe(self, pk):
+       try:
+        recipe = Recipe.objects.get(recipeId=pk)
+        return recipe
+       except Recipe.DoesNotExist:
+        raise Http404
+    # get all reipes
+    def get(self, request, pk=None):
+       if pk:
+        data = self.get_recipe(pk)
+        serializer = RecipeSerializer(data)
+       else:
+        data = Recipe.objects.all()
+        serializer = RecipeSerializer(data, many=True)
+       return Response(serializer.data)
    
     def post(self, request):
         data = request.data
