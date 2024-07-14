@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+class Recipe(models.Model):
+    recipeId = models.AutoField(primary_key=True)
+    recipeName = models.CharField(max_length=100)
+    time = models.CharField(max_length=100)
+    ingredients = models.CharField(max_length=100)
+    instructions = models.CharField(max_length=100)
