@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Recipe
+
+models_list = [Recipe]
+admin.site.register(models_list)
