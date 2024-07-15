@@ -2,8 +2,9 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import App from './App.jsx'
-import Home from './components/Home.jsx'
+import App from './App.jsx';
+import Home from './components/Home.jsx';
+import Recipe from './components/Recipe.jsx';
 
 
 
@@ -16,7 +17,11 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />
-      }
+      },
+      {
+        path: '/recipes',
+        element: <Recipe />
+      },
     
     ]
   }
