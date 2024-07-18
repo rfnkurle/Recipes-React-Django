@@ -131,4 +131,4 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOWED_ORIGINS = ['https://intense-forest-38655-411c6c58cdb1.herokuapp.com' ] 
+CORS_ALLOWED_ORIGINS = ['https://intense-forest-38655-411c6c58cdb1.herokuapp.com','https://intense-forest-38655-411c6c58cdb1.herokuapp.com/recipes', 'https://intense-forest-38655-411c6c58cdb1.herokuapp.com/manage' ] 
