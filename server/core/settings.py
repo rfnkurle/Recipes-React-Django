@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--^*y!*7e8bk8&t2=%lg-^k)1)0re$01-h7a$_-%#t97ecly!=+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ip_address']
+ALLOWED_HOSTS = ['https://intense-forest-38655-411c6c58cdb1.herokuapp.com/']
 
 
 # Application definition
@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "corsheaders.middleware.CorsMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'core.urls'
