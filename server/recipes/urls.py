@@ -1,6 +1,8 @@
 from django.urls import path
 from .views import RecipeView
 from . import views
+from django.shortcuts import render
+
 
 #routes for get all recipes and target recipe by id for get one or delete
 urlpatterns = [
