@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'recipes.apps.RecipesConfig',
     'corsheaders',
     'rest_framework',
+    'core'
 ]
 
 MIDDLEWARE = [
