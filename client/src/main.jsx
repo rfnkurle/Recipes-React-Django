@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import App from './App.jsx';
 import Home from './components/Home.jsx';
 import Recipe from './components/Recipe.jsx';
+import Manage from './components/Manage.jsx';
 
 
 
@@ -22,7 +23,10 @@ const router = createBrowserRouter([
         path: '/recipes',
         element: <Recipe />
       },
-    
+      {
+        path: '/manage',
+        element: <Manage/>
+      },
     ]
   }
 ])
