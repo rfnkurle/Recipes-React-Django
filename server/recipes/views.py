@@ -7,7 +7,8 @@ from django.http.response import JsonResponse
 from .models import Recipe
 from .serializers import RecipeSerializer
 
-
+def index(request):
+    return render(request, 'frontend/index.html')
 class RecipeView(APIView):
     #target single recipe
     def get_recipe(self, pk):
