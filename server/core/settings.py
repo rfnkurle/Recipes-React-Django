@@ -130,4 +130,4 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOWED_ORIGINS = ['http://localhost:8000', 'http://localhost:5173'] 
+CORS_ALLOWED_ORIGINS = ['http://localhost:8000', 'http://localhost:5173', 'intense-forest-38655-411c6c58cdb1.herokuapp.com'] 
