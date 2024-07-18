@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--^*y!*7e8bk8&t2=%lg-^k)1)0re$01-h7a$_-%#t97ecly!=+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'http://localhost:8000','http://localhost:5173','intense-forest-38655-411c6c58cdb1.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'http://intense-forest-38655-411c6c58cdb1.herokuapp.com']
 
 
 # Application definition
