@@ -1,12 +1,12 @@
 import axios from 'axios';
 
 export function getRecipes() {
-  return axios.get('http://127.0.0.1:8000/recipes/')
+  return axios.get('https://intense-forest-38655-411c6c58cdb1.herokuapp.com/recipes/')
     .then(response => response.data)
 }
 
 export function addRecipe(recipe){
-  return axios.post('http://127.0.0.1:8000/recipes/', {
+  return axios.post('https://intense-forest-38655-411c6c58cdb1.herokuapp.com/recipes/', {
     recipeId:null,
     recipeName:recipe.recipeName.value,
     time:recipe.time.value,
