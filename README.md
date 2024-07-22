@@ -1,7 +1,11 @@
 # React-Django Recipe App
 
 https://intense-forest-38655-411c6c58cdb1.herokuapp.com/recipes
- 
+
+<img width="1091" alt="Screen Shot 2024-07-22 at 1 48 49 PM" src="https://github.com/user-attachments/assets/94b0b151-aad6-4202-b7ae-8de41d106917">
+
+<img width="1109" alt="Screen Shot 2024-07-22 at 1 48 59 PM" src="https://github.com/user-attachments/assets/f844b20b-7470-4326-8996-f3ac2b90ce95">
+
 ## Architecture Overview
 
 ### Frontend (React)
